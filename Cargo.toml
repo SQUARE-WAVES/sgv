@@ -1,0 +1,14 @@
+[package]
+name = "sgv"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+#----FOR THE PARSER------------------------------
+lang = {path="lang"}
+colored = "3.0.0"
+rustyline = { version = "15.0.0", features = ["derive"] }
+
+#----FOR THE PLAYER------------------------------
+midir = {version="0.10.1",features=["coremidi_send_timestamped"]}
+adi_clock = "0.3.0"
